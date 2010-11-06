@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>nu7hatch's piece of web...</title>
+    <meta name="charset" content="utf-8" />
+    <meta name="keywords" content="ruby, rails, padrino, python, programming, unix, linux, freebsd, gentoo, javascript, erlang, haskell">
+    <meta name="description" content="nu7hatch's piece of web...">
+    <link href="css/screen.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="#links" class="accessibility">Go to menu</a>
+
+    <header id="header">
+      <h1>nu7hatch's piece of web...</h1>
+      <p>I have no special talents, I am only passionately curious...</p>
+      <div class="clear"></div>
+    </header>
+
+    <aside id="face">
+      <pre><%= File.read(File.join(settings.assets_path, 'face.ascii')) %></pre>
+    </aside>
+    
+    <section id="links" name="links">
+      <nav>
+        <li><strong>BLOG:</strong> <a href="http://blog.nu7hat.ch">Find something to read</a></li>
+        <li><strong>GITHUB:</strong> <a href="http://github.com/nu7hatch">Fork my projects!</a></li>
+        <li><strong>TWITTER:</strong> <a href="http://twitter.com/nu7hatch">Follow me!</a></li>
+        <li><strong>CONTACT:</strong> chris<span class="antispam">fuck you spam!</span>@<span class="antispam">fuuu</span>nu7hat.ch</li>
+      </nav>
+    </section>
+
+    <footer id="footer">
+      Copyleft <%= Time.now.year %> by Chris Kowalik aka. nu7hatch
+    </footer>
+  </body>
+</html>
