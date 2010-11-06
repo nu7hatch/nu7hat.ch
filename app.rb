@@ -7,3 +7,11 @@ set :public,      File.expand_path('../public', __FILE__)
 get "/" do
   erb :'index.html'
 end
+
+get "/blog" do
+  # TODO: ...
+end
+
+get "/blog/:slug" do
+  # TODO: ...
+end
