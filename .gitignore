@@ -5,7 +5,7 @@ tmtags
 \#*
 .\#*
 *.swp
-coverage
-rdoc
-pkg
-*.rdb
+*.jar
+tmp
+*.war
+*.pyc
