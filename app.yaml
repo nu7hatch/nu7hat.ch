@@ -7,4 +7,4 @@ handlers:
 - url: /css
   static_dir: static/css
 - url: /.*
-  script: nu7hatch.py
+  script: main.py
