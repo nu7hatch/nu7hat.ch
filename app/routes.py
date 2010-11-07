@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from itty import get
-from helpers import * 
+from app.helpers import * 
 
 @get('/')
 def index(request):
