@@ -5,8 +5,8 @@ a:hover { color: #777; }
 .clear { clear:both; }
 
 #face { margin-bottom: -5px; margin-top: -5px; float: right; line-height: 90%; border: 0; font-size: 9px !important;font-family: courier, Monospace; }
-#links, #header { background: #111; padding: 3px 10px 3px 10px; color: #FFF; clear: both; font-size: 14px; text-align: right; font-family: courier, Monospace; }
-#header { display: block; text-align: left; }
+#links, #header { display: block; background: #111; padding: 3px 10px 3px 10px; color: #FFF; clear: both; font-size: 14px; text-align: right; font-family: courier, Monospace; }
+#header { text-align: left; }
 #header h1 { font-size: 14px; margin: 0; padding: 0; float: left; }
 #header p { margin: 0; padding: 0; float: right; }
 #links nav a { color: #EEE; }
