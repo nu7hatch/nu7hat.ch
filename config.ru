@@ -1,19 +1,15 @@
 # -*- ruby -*- 
 require 'bundler/setup'
+require 'sinatra'
 
-use Rack::Static, {
-  :root  => 'public',
-  :index => 'index.html',
-  :urls  => [""],
-}
+set :public_folder, File.expand_path("../public", __FILE__)
 
-error_404 = 'public/404.html'
+get "/" do
+  File.read(File.join(settings.public_folder, "index.html"))
+end
 
-run lambda {
-  [404, {
-    "Content-Type"   => "text/html",
-    "Content-Length" => File.size(error_404).to_s,
-    "Last-Modified"  => File.mtime(error_404).httpdate,
-    }, File.read(error_404)
-  ]
-}
+not_found do
+  File.read(File.join(settings.public_folder, "404.html"))
+end
+
+run Sinatra::Application

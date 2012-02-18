@@ -1,19 +1,21 @@
-body { margin: 5px 0px 10px 0px; padding: 0; font-family:monospace, Courier; font-size:8px; color:#000000; background-color:#FFFFFF }
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+body { margin: 5px 0px 10px 0px; padding: 0; font-family: "Ubuntu Mono", monospace, "Courier New", Courier; font-size:1em; color:#000000; background-color:#FFFFFF }
 
 a { color: #111; text-decoration: none; }
 a:hover { color: #777; }
 
-#index #face { margin-bottom: -5px; margin-top: -5px; float: right; line-height: 90%; border: 0; font-size: 9px !important;font-family: courier, Monospace; }
-#index #links, #header { display: block; background: #111; padding: 3px 15px 3px 15px; color: #FFF; clear: both; font-size: 14px; text-align: right; font-family: courier, Monospace; }
+#index #face { margin-bottom: -5px; margin-top: -5px; float: right; line-height: 90%; border: 0; font-size: 9px !important; }
+#index #links, #header { display: block; background: #111; padding: 6px 15px 8px 15px; color: #FFF; clear: both; font-size: 1.1em; text-align: right; }
 #index #header { text-align: left; }
-#index #header h1 { font-size: 14px; margin: 0; padding: 0; float: left; }
+#index #header h1 { font-size: 1.1em; margin: 0; padding: 0; float: left; }
 #index #header p { margin: 0; padding: 0; float: right; }
 #index #links nav a { color: #EEE; }
 #index #links nav a:hover { color: #AAA; }
 #index #links nav { list-style-type: none; margin: 0; padding: 0; }
 #index #links nav li { display: inline; padding-left: 15px; }
 
-#footer { text-align: right; color: #555; font-size: 10px; display: block; padding: 5px 10px; }
+#footer { text-align: right; color: #555; font-size: .9em; display: block; padding: 15px 10px 25px 10px; }
 
 .clear { clear:both; }
 .antispam { display: none; }
