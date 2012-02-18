@@ -1,5 +1,4 @@
-# nu7hat.ch
+# www.nu7hat.ch
 
-My personal website, written for Google Apps Engine using Itty web framework.
 
-Visit [http://nu7hat.ch](http://nu7hat.ch) to see it live. 
+My personal website. Visit [www.nu7hat.ch](http://www.nu7hat.ch) to see it live. 

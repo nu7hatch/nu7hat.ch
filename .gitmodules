@@ -1,3 +1,0 @@
-[submodule "lib/itty"]
-	path = lib/itty
-	url = git://github.com/toastdriven/itty.git
