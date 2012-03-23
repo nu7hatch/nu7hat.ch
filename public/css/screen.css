@@ -1,22 +1,159 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
 
-body { margin: 5px 0px 10px 0px; padding: 0; font-family: "Ubuntu Mono", monospace, "Courier New", Courier; font-size:1em; color:#000000; background-color:#FFFFFF }
+body { margin: 0; padding: 0; font-family: "Ubuntu Mono", monospace, "Courier New", Courier; font-size:1em; color:#000000; background-color:#FFFFFF }
 
 a { color: #111; text-decoration: none; }
 a:hover { color: #777; }
 
-#index #face { margin-bottom: -5px; margin-top: -5px; float: right; line-height: 90%; border: 0; font-size: 9px !important; }
-#index #links, #header { display: block; background: #111; padding: 6px 15px 8px 15px; color: #FFF; clear: both; font-size: 1.1em; text-align: right; }
-#index #header { text-align: left; }
-#index #header h1 { font-size: 1.1em; margin: 0; padding: 0; float: left; }
-#index #header p { margin: 0; padding: 0; float: right; }
-#index #links nav a { color: #EEE; }
-#index #links nav a:hover { color: #AAA; }
-#index #links nav { list-style-type: none; margin: 0; padding: 0; }
-#index #links nav li { display: inline; padding-left: 15px; }
-
-#footer { text-align: right; color: #555; font-size: .9em; display: block; padding: 15px 10px 25px 10px; }
-
 .clear { clear:both; }
 .antispam { display: none; }
 .accessibility { position: absolute; top: -9999px; }
+
+h1 {
+   font-size: 2.5em;
+   color: #CD8;
+   padding: .2em 20px;
+   background: #F0FFD0;
+   text-shadow: 1px 1px 0 rgba(255,255,255,.8);
+   margin-top: 0;
+}
+
+#changelog {
+   list-style-type: none;
+   margin: 2em 20px;
+   padding: 0px;
+}
+#changelog li {
+   font-size: 1.2em;
+}
+#changelog li article time {
+   font-size: .7em;
+   color: #777;
+   padding: .5em 20px;
+   padding-left: 20px;
+   margin-left: -20px;
+   background: #000;
+   color: #FFF;
+}
+#changelog li article.prize time {
+   background: #C40;
+}
+#changelog li article.speaker time {
+   background: #8A0;
+}
+#changelog li article p {
+   margin-top: 1.2em;
+   margin-bottom: .5em;
+}
+#changelog li article p.extra {
+   margin-top: 0;
+   color: #777;
+   font-size: .7em;
+   margin-bottom: .8em;
+}
+#changelog li article p.extra a {
+   color: #777;
+}
+#changelog li {
+   padding: 0;
+   margin-bottom: 2em;
+}
+#changelog li a {
+   text-decoration: underline;
+}
+#changelog li a:hover {
+   text-decoration: none;
+}
+
+[role='contentinfo'] {
+   background: #F0FFD0;
+   margin-bottom: 0;
+   color: #8A5;
+   font-size: .9em;
+   display: block;
+   padding: 1em 20px 3em 20px;
+}
+
+.coderwall-logo {
+   display: none !important;
+}
+.coderwall {
+   text-align: left !important;
+   padding: 0 15px !important;
+   margin-bottom: 2em !important;
+}
+.coderwall a {
+   display: inline-block;
+   margin: 5px;
+}
+
+@media screen and (max-width: 900px) {
+   h2 {
+      font-size: 2.2em;
+   }
+}
+@media screen and (max-width: 480px) {
+   h2 {
+      font-size: 1.8em;
+      padding-top: .4em;
+   }
+}
+
+#social {
+   list-style-type: none;
+   margin: 1.2em 0 0 -2px;
+   padding: 0;
+}
+#social li {
+   display: inline-block;
+   padding: 0;
+}
+#social li a {
+   width: 38px;
+   height: 38px;
+   display: block;
+   text-indent: -9999px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: #CD8;
+   background-size: 40px;
+   -moz-border-radius: 1px;
+   -webkit-border-radius: 1px;
+   border-radius: 1px;
+   padding: 0;
+   margin: 0;
+   opacity: .7;
+}
+#social li a:hover {
+   opacity: 1;
+}
+#social li.github a {
+   background-image: url(/img/Github.png);
+}
+#social li.twitter a {
+   background-image: url(/img/Twitter.png);
+}
+#social li.skype a {
+   background-image: url(/img/Skype.png);
+}
+#social li.linkedin a {
+   background-image: url(/img/LinkedIn.png);
+}
+#social li.blog a {
+   background-image: url(/img/RSS.png);
+}
+
+#error [role='main'] {
+   padding: 0 20px;
+}
+#error [role='contentinfo'] {
+   padding: 1em 20px;
+}
+#error [role='contentinfo'] h1 {
+   padding: 0;
+   margin-bottom: .2em;
+   margin-left: -2px;
+}
+#error [role='contentinfo'] p {
+   margin: .2px 0;
+}
