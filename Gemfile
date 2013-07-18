@@ -1,6 +1,6 @@
 # -*- ruby -*-
 source 'http://rubygems.org'
 
-gem 'thin'
-gem 'rake', "0.8.7"
+gem 'puma'
+gem 'rake'
 gem 'sinatra'
